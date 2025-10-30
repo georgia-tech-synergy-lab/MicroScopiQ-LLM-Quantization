@@ -1,0 +1,2 @@
+python evaluation_gsm8k.py --model meta-llama/Llama-2-13b-hf --prompt_file gsm8k_prompt_original.txt --batch_size 8 --max_new_tokens 256 --compress_method KIVI --attention_number 40 --quantize_bit 4 --group_size 64 --streaming --streaming_gap 64   > llama2_kivi_4b_64_64_gsm8k.txt
+python evaluation_gsm8k.py --model meta-llama/Llama-2-13b-hf --prompt_file gsm8k_prompt_original.txt --batch_size 8 --max_new_tokens 256 --compress_method KIVI --attention_number 40 --quantize_bit 2 --group_size 64 --streaming --streaming_gap 64   > llama2_kivi_2b_64_64_gsm8k.txt
